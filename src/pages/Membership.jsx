@@ -7,7 +7,7 @@ import { loadStripe } from "@stripe/stripe-js"
 import useBadge from "../hooks/useBadge"
 import { useNavigate } from "react-router-dom"
 import { Helmet } from "react-helmet-async"
-// import { useEffect } from "react"
+import { useEffect } from "react"
 
 const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY)
 
@@ -17,7 +17,9 @@ const Membership = () => {
 	const navigate = useNavigate()
 	const price = 200
 
-	if (badge === "Gold") navigate("/dashboard")
+	useEffect(() => {
+		if (badge === "Gold") navigate("/dashboard")
+	}, [badge, navigate])
 
 	return (
 		<>

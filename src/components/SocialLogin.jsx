@@ -1,11 +1,11 @@
-import { FaGithub } from "react-icons/fa"
+// import { FaGithub } from "react-icons/fa"
 import { FcGoogle } from "react-icons/fc"
 // import useAuth from "../hooks/useAuth"
 import { useLocation, useNavigate } from "react-router-dom"
 import useAuth from "../hooks/useAuth"
 
 const SocialLogin = () => {
-	const { googleSignIn, githubSignIn } = useAuth()
+	const { googleSignIn } = useAuth()
 
 	// navigation system
 	const navigate = useNavigate()
@@ -25,10 +25,10 @@ const SocialLogin = () => {
 				onClick={() => handleSocialSignIn(googleSignIn)}
 				className='text-2xl hover:scale-110 transform transition-all duration-500 cursor-pointer'
 			/>
-			<FaGithub
+			{/* <FaGithub
 				onClick={() => handleSocialSignIn(githubSignIn)}
 				className='text-2xl hover:scale-110 transform transition-all duration-500 cursor-pointer'
-			/>
+			/> */}
 		</div>
 	)
 }
