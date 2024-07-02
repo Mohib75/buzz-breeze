@@ -54,32 +54,32 @@ Make sure you have the following installed on your machine:
 
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
-Navigate to the project directory:
+***Navigate to the project directory:**
 
-bash
+   ```bash
 cd your-repo-name
-Install dependencies:
+***Install dependencies:**
 
 Using npm:
 
-bash
+   ```bash
 npm install
 Using Yarn:
 
-bash
+   ```bash
 yarn install
-Start the development server:
+***Start the development server:**
 
 Using npm:
 
-bash
+   ```bash
 npm run dev
 Using Yarn:
 
-bash
+   ```bash
 yarn dev
-Open your browser and visit:
+***Open your browser and visit:**
 
-arduino
+   ```arduino
 http://localhost:3000
 
