@@ -74,15 +74,15 @@ Make sure you have the following installed on your machine:
 
 4. **Start the development server:**
 
-Using npm:
-   ```bash
-   npm run dev
-   ```
+   Using npm:
+      ```bash
+      npm run dev
+      ```
 
-Using Yarn:
-   ```bash
-   yarn dev
-   ```
+   Using Yarn:
+      ```bash
+      yarn dev
+      ```
 
 5. **Open your browser and visit:**
 
