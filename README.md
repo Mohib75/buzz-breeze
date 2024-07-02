@@ -39,3 +39,47 @@ Here are some features and characteristics of our website
 
 * We also use a payment system. Users can buy courses
 
+## How to Run Locally
+
+### Prerequisites
+
+Make sure you have the following installed on your machine:
+
+- [Node.js](https://nodejs.org/) (version 14 or higher)
+- [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
+
+### Getting Started
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+Navigate to the project directory:
+
+bash
+cd your-repo-name
+Install dependencies:
+
+Using npm:
+
+bash
+npm install
+Using Yarn:
+
+bash
+yarn install
+Start the development server:
+
+Using npm:
+
+bash
+npm run dev
+Using Yarn:
+
+bash
+yarn dev
+Open your browser and visit:
+
+arduino
+http://localhost:3000
+
