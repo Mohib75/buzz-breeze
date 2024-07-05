@@ -37,7 +37,6 @@ Here are some features and characteristics of our website
 
 * admin can see those reported comments and can take action about them
 
-* We also use a payment system. Users can buy courses
 
 ## How to Run Locally
 
