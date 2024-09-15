@@ -31,8 +31,8 @@ const Banner = () => {
 		navigate(url)
 	}
 	return (
-		<div className='h-[500px] bg-[#313046] rounded-2xl my-12 flex flex-col justify-center items-center mx-4 sm:mx-0 p-4'>
-			<h1 className='text-xl md:text-6xl font-bold text-white'>Welcome to BuzzBreeze Forum</h1>
+		<div className='h-[500px] bg-[#313046] rounded-2xl my-12 flex flex-col justify-center items-center p-4'>
+			<h1 className='text-xl md:text-6xl font-bold text-white text-center lg:text-start'>Welcome to BuzzBreeze Forum</h1>
 			<p className='text-[#b9b9c8] mt-4 mb-12 text-sm sm:text-base'>
 				Join our community to share ideas, ask questions, and connect with fellow enthusiasts!
 			</p>
