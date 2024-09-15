@@ -1,9 +1,8 @@
 import { TfiAnnouncement } from "react-icons/tfi"
-import { Link } from "react-router-dom"
 
 const AnnouncementCard = ({ announcement }) => {
 	return (
-		<Link to={`/post/${announcement?._id}`} className='hover:bg-[#222038] transition-all duration-500 cursor-pointer p-4 rounded-2xl'>
+		<div className='p-4 rounded-2xl'>
 			<div className='flex justify-between items-center mt-4 gap-20'>
 				<div className='flex gap-4 w-80'>
 					<TfiAnnouncement className='text-[#2575ED]' size={26} />
@@ -31,7 +30,7 @@ const AnnouncementCard = ({ announcement }) => {
 					<p className='text-white mr-2'>By author</p>
 				</div>
 			</div>
-		</Link>
+		</div>
 	)
 }
 
