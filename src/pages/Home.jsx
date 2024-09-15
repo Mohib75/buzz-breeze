@@ -23,13 +23,15 @@ const Home = () => {
 				<title>BuzzBreeze</title>
 			</Helmet>
 
-			<Banner />
+			<div className='mx-4'>
+				<Banner />
 
-			<Tags />
+				<Tags />
 
-			<Post />
+				<Post />
 
-			{announcements && announcements.length > 0 ? <Announcement announcements={announcements} /> : ""}
+				{announcements && announcements.length > 0 ? <Announcement announcements={announcements} /> : ""}
+			</div>
 		</>
 	)
 }
