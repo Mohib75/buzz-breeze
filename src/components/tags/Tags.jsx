@@ -16,12 +16,14 @@ const Tags = () => {
 	})
 
 	return (
-		<div className='flex flex-col gap-8 bg-[#313046] overflow-x-auto rounded-2xl mb-12 py-4 mx-4 sm:mx-0'>
+		<div className='flex flex-col gap-8 bg-[#313046] rounded-2xl mb-12 py-4'>
 			<h2 className='text-4xl text-white font-bold self-center'>Tags</h2>
-			<div className='pt-4 flex items-center justify-between'>
-				{tags.map((tag, index) => (
-					<TagBox key={index} tags={tag.tags} />
-				))}
+			<div className='overflow-x-auto'>
+				<div className='pt-4 flex items-center justify-between'>
+					{tags.map((tag, index) => (
+						<TagBox key={index} tags={tag.tags} />
+					))}
+				</div>
 			</div>
 		</div>
 	)

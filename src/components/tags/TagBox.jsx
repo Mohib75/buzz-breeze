@@ -24,9 +24,9 @@ const TagBox = ({ tags }) => {
 	return (
 		<div
 			onClick={handleClick}
-			className={`flex flex-col items-center justify-center gap-2 p-3 border-r-2 bg-[#313046] text-white hover:text-[#b9b9cb] transition cursor-pointer  ${
-				selectedTags === tags && "text-[#a9a9c7] border-b-2 border-white "
-			} `}>
+			className={`flex items-center justify-center gap-4 p-3 border-r-2 bg-[#313046] text-white hover:text-[#b9b9cb] transition cursor-pointer ${
+				selectedTags === tags && "text-[#a9a9c7] border-b-2 border-white"
+			}`}>
 			<FaComment className='text-[#2575ED]' size={26} />
 			<div className='text-sm font-medium'>{tags}</div>
 		</div>
