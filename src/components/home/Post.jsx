@@ -19,7 +19,7 @@ const Post = () => {
 	const numberOfPages = Math.ceil(count / itemsPerPage)
 	const pages = [...Array(numberOfPages).keys()]
 
-	console.log(selectedTags)
+	// console.log(selectedTags)
 	const { data: posts = [], isLoading } = useQuery({
 		queryKey: ["posts", selectedTags],
 		queryFn: async () => {
@@ -68,13 +68,15 @@ const Post = () => {
 	return (
 		<>
 			{filteredPosts && filteredPosts.length > 0 ? (
-				<div className='flex flex-col bg-[#313046] rounded-2xl overflow-x-auto p-8 mb-12 mx-4'>
+				<div className='flex flex-col bg-[#313046] rounded-2xl p-8 mb-12'>
 					<h2 className='text-4xl text-white font-bold self-center'>Posts</h2>
-					<div className='flex flex-col gap-4'>
+
+					<div className='flex flex-col gap-4 overflow-x-auto'>
 						{filteredPosts.map((post, index) => (
 							<PostCard key={index} post={post} />
 						))}
 					</div>
+
 					<div className='pagination mt-20 flex flex-col sm:flex-row gap-8 self-center'>
 						<div className='join'>
 							<Button onClick={handlePrevPage} className='join-item btn'>
