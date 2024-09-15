@@ -137,10 +137,10 @@ const PostDetails = () => {
 			<Helmet>
 				<title>BuzzBreeze || Post Details</title>
 			</Helmet>
-			<div className='flex flex-col gap-8 mx-4 sm:mx-0'>
+			<div className='flex flex-col gap-8 mx-4'>
 				<h2 className='text-4xl text-white font-bold self-center'>{post?.title}</h2>
 
-				<div className='flex flex-col bg-[#313046] rounded-2xl w-full p-6 overflow-x-auto'>
+				<div className='flex flex-col bg-[#313046] rounded-2xl min-w-full p-6 overflow-x-auto'>
 					<div className='flex gap-4'>
 						<div className='avatar'>
 							<div className='size-16 rounded-full ring ring-[#b9b9c8] ring-offset-[#b9b9c8] ring-offset-2'>
